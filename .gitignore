@@ -1,0 +1,10 @@
+node_modules/
+config/local.php
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+test-results/
+var/
+verification-inputs/

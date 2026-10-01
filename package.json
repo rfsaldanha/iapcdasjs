@@ -1,0 +1,22 @@
+{
+  "name": "iapcdasjs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Integração JavaScript e PHP com o ChatPCDAS a partir de tabelas e um prompt.",
+  "type": "module",
+  "exports": "./src/index.js",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/client.test.mjs tests/php.test.mjs tests/proadess.test.mjs",
+    "test:browser": "node --test tests/browser.test.mjs",
+    "check": "npm run build:check && npm test && npm run test:browser",
+    "build:check": "node scripts/build.mjs --check"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright-core": "1.63.0"
+  }
+}
